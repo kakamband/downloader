@@ -2,7 +2,7 @@ import getCookies from './getCookies'
 
 import getMeta from './getMetaData';
 import getId from './getId';
-import getStream from '../../utils/downloader';
+import getStream from '../../utils/getStream';
 
 
 async function main(url) {

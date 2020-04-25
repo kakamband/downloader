@@ -1,4 +1,4 @@
-import { dlFree, anonFiles, solidFiles } from './main'
+import { dlFree, anonFiles, solidFiles } from './hosts/main'
 
 import DownloadInfo from './types/DownloadInfo'
 
@@ -10,6 +10,7 @@ let urls = urls.match(regex)
 let items: any[] = [];*/
 
 async function analizeUrl(urls: string[]) {
+ let items:any = []
  let item: downloadInfo;
  for await (const [i, url] of urls.entries()) {
   if (url.includes("dl.free")) {
