@@ -1,6 +1,30 @@
+let url = {
+ 
+ 
+ 
+}
 
-import"core-js/stable";
-import"regenerator-runtime/runtime";
+interface DownloadInfo {
+ 
+ host: string;
+ size: string;
+ attachment: string;
+ downloadUrl: string;
+ downloadStream: any;
+}
 
-console.log('testing')
-console.log('hi world')
+
+async function getStream() {
+ 
+}
+async function downloader() {
+ 
+}
+
+class Downloader {
+ downloadUrl(urls: string | string[]){
+  let info: DownloadInfo = await download(urls)
+  return info
+ }
+}
+
