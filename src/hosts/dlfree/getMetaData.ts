@@ -12,13 +12,13 @@ async function getData(url) {
   return $(e).html()
  }).get()
  
- let fl = meta[0]
- let sz = meta[1]
+ let filename = meta[0]
+ let size = meta[1]
  
  
  console.log(fl, sz)
  
- return {sz, fl}
+ return {filename, size}
 }
 
 export default getData;
