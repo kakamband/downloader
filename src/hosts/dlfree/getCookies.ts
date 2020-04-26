@@ -35,7 +35,6 @@ const getCookies = async (id) => {
    let array = strg.split(';')
    let cookie = array[0]
    let headers = {
-    'User-Agent': userAgent,
     'Cookie': cookie
    }
    rs({ location, headers })
